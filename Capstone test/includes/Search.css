@@ -1,0 +1,198 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+    font-weight: bold;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf1e6;
+     
+}
+
+.homepage-Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: myFirstFont;
+
+}
+
+.logo a:link {
+    color: blue;
+}
+
+.logo a:visited {
+    color: blueviolet;
+}
+
+.logo a:hover {
+    color: rgb(255, 6, 201);
+}
+
+.logo a:active {
+    color: aqua;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: myFirstFont;
+    font-size: 20px;
+}
+
+nav ul li a:link {
+    color: black;
+}
+
+nav ul li a:visited {
+    color: blueviolet;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+nav ul li a:active {
+    color: aqua;
+}
+
+.SearchResultsHeader {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FDFAF6;
+}
+
+.SearchResultsHeader h1 {
+    font-family: American Typewriter, serif;
+}
+/*  Styling for brand attributes */
+#brandAttributes {
+    font-family: Arial, sans-serif; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+#brandAttributes h2 {
+    color: #333; 
+    text-align: center; 
+}
+
+#brandAttributes p {
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+#brandAttributes ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+#brandAttributes li {
+    margin-bottom: 10px; 
+}
+
+/* styling for the nutrient data */
+#NutrientData {
+    font-family: Arial, sans-serif; 
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border-radius: 8px; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+#NutrientData h2 {
+    color: #333; 
+    text-align: center; 
+}
+
+#NutrientData p {
+    color: #666; 
+    line-height: 1.6;
+    margin-bottom: 20px; 
+}
+
+#NutrientData ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+#NutrientData li {
+    margin-bottom: 10px; 
+}
+footer {
+    background-color: #FDFAF6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive media queries for mobile devices */
+@media (max-width: 768px) {
+    /* Adjusts navigation for smaller screens */
+    .homepage-Navbar {
+        flex-direction: column;
+        padding: 10px 20px; /* Reduced padding for smaller screens */
+    }
+
+    .logo, nav ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%; /* Makes each nav item full width */
+        padding: 10px 0; /* Adds more vertical padding for easier tapping */
+    }
+
+    /* Header adjustments */
+    .SearchResultsHeader {
+        padding: 20px 10px; /* Adjusts padding to fit smaller screens */
+    }
+
+    .SearchResultsHeader h1 {
+        font-size: 24px; /* Reduces font size to fit smaller screens */
+    }
+
+    /* Content section adjustments */
+    #brandAttributes, #NutrientData {
+        padding: 20px 10px; /* Adjusts padding to fit smaller screens */
+        margin: 10px auto; /* Ensures everything is centered and optimally spaced */
+        max-width: 100%; /* Allows sections to fill the available space */
+    }
+
+    #brandAttributes ul, #NutrientData ul {
+        padding: 0 10px; /* Adjusts padding for list items */
+    }
+
+    #brandAttributes li, #NutrientData li {
+        margin-bottom: 5px; /* Reduces the margin to make the list denser */
+    }
+}
+
+footer {
+    padding: 10px 0; /* Reduces footer padding on smaller screens */
+}

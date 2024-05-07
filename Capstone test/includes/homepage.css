@@ -1,0 +1,285 @@
+/* this is a font style I found online that I liked */
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+    font-weight: bold;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf1e6;
+     
+}
+
+.homepage-Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+/* This is setting up the logo aspects */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: myFirstFont;
+
+}
+
+.logo a:link {
+    color: blue;
+}
+
+.logo a:visited {
+    color: blueviolet;
+}
+
+.logo a:hover {
+    color: rgb(255, 6, 201);
+}
+
+.logo a:active {
+    color: aqua;
+}
+/* Setting up nav elements */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: myFirstFont;
+    font-size: 20px;
+}
+
+nav ul li a:link {
+    color: black;
+}
+
+nav ul li a:visited {
+    color: blueviolet;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+nav ul li a:active {
+    color: aqua;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FDFAF6;
+}
+
+.hero h1 {
+    font-family: American Typewriter, serif;
+}
+/* Doing some search bar styling */
+.searchBars input[type="number"] {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.searchBars input[type="text"] {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.searchBars button{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: 04aa6d;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.searchBars button:hover {
+    background-color: #3e8e41;
+}
+/* This is what allows the slight button animation */
+.searchBars button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* General styling for the  resource section*/
+#resources {
+    font-family: Arial, sans-serif; 
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border-radius: 8px; /* Rounded corners for the section */
+    max-width: 600px; 
+    margin: 20px auto; /* Centering the section */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+}
+
+#resources h2 {
+    color: #333; 
+    text-align: center; /* Centering the headline */
+}
+
+#resources p {
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 20px; /* Some extra Space before the list starts */
+}
+
+#resources ul {
+    list-style-type: none; /* Removing default bullet points */
+    padding: 0; /* Removing default padding */
+}
+
+#resources li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+#resources a {
+    text-decoration: none; /* Removing underline from links */
+    color: #1a73e8; 
+    padding: 8px 16px; 
+    display: inline-block; /* Allows padding and margin to work properly */
+    border: 1px solid transparent; /* Prepares style for hover effect */
+    transition: color 0.3s ease, border-color 0.3s ease; /* Allows for a Smooth transition for hover effects */
+}
+
+#resources a:hover {
+    color: #0f5bb5; /* Darker blue on hover */
+    border-color: #1a73e8; /* Border appears on hover for more definition */
+}
+
+.creditsBackground {
+    background-color: #fdfaf6;
+}
+
+/* Some styling for the credits */
+#credits {
+    font-family: Arial, sans-serif; 
+    padding: 20px;
+    max-width: 600px; 
+    margin: 20px auto; /* Centering the section */
+}
+
+#credits h2 {
+    color: #333; 
+    text-align: center;
+}
+
+#credits p {
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+#credits ul {
+    padding: 0; /* Removing default padding */
+}
+
+#credits li {
+    margin-bottom: 10px; 
+}
+/* Very similar to search button */
+#credits button{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: 04aa6d;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#credits button:hover {
+    background-color: #3e8e41;
+}
+
+#credits button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+} 
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive media queries for mobile devices */
+@media (max-width: 768px) {
+   /* Adjusts navigation for smaller screens */
+   .homepage-Navbar {
+    flex-direction: column;
+    padding: 10px 20px; /* Reduced padding for smaller screens */
+}
+
+.logo, nav ul {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    flex-direction: column;
+}
+
+nav ul li {
+    width: 100%; /* Makes each nav item full width */
+    padding: 10px 0; /* Adds more vertical padding for easier tapping */
+}
+
+    /* Adjusts search bars and buttons to be more usable on small screens */
+    .searchBars input[type="number"], .searchBars input[type="text"] {
+        width: calc(100% - 24px); /* Full width minus padding for edge-to-edge design */
+        margin: 10px 10px; /* Reduces margin for more space */
+    }
+
+    .searchBars button {
+        width: 100%; /* Full width buttons for easier access */
+        padding: 20px;
+    }
+
+    /* Adjusts hero and other content sections for small screens */
+    .hero {
+        padding: 20px 10px; /* Reduces padding */
+    }
+
+    .hero h1 {
+        font-size: 24px; /* Smaller font size for space efficiency */
+    }
+
+    /* Resource and credits sections adjusted for small screens */
+    #resources, #credits {
+        max-width: 100%; /* Allows the box to expand to full width */
+        padding: 20px 10px; /* Adjusts padding */
+        margin: 10px; /* Reduces margin for edge-to-edge design */
+    }
+
+    #resources a, #credits button {
+        width: 100%; /* Full width links for easier tapping */
+    }
+
+    footer {
+        padding: 10px 0; /* Reduced padding in the footer on small screens */
+    }
+}
+

@@ -1,0 +1,245 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf1e6;
+     
+}
+
+.homepage-Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: myFirstFont;
+
+}
+
+.logo a:link {
+    color: blue;
+}
+
+.logo a:visited {
+    color: blueviolet;
+}
+
+.logo a:hover {
+    color: rgb(255, 6, 201);
+}
+
+.logo a:active {
+    color: aqua;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: myFirstFont;
+    font-size: 20px;
+}
+
+nav ul li a:link {
+    color: black;
+}
+
+nav ul li a:visited {
+    color: blueviolet;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+nav ul li a:active {
+    color: aqua;
+}
+
+.FAQHeader {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FDFAF6;
+}
+
+.FAQHeader h1 {
+    font-family: American Typewriter, serif;
+}
+
+#Questions {
+    font-family: Arial, sans-serif; 
+    background-color: #f9f9f9;
+    padding: 20px; 
+    border-radius: 8px; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+}
+
+#Questions h2 {
+    color: #333; 
+    text-align: center; 
+}
+
+#Questions p {
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+#Questions ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+#Questions li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Styling how the search results will look(tyring to see if i can style this better) */
+.fdc_SearchResults {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FDFAF6;
+}
+
+.fdc_SearchResults input[type="number"]/* Specifies the input type for the button */ {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.fdc_SearchResults button{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: 04aa6d;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.fdc_SearchResults button:hover {
+    background-color: #3e8e41;
+}
+
+.fdc_SearchResults button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+#FDC {
+    font-family: Arial, sans-serif; 
+    background-color: #f9f9f9; 
+    padding: 60px; 
+    border-radius: 15px; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+#FDC h2 {
+    color: #333; 
+    text-align: center; 
+}
+
+#FDC p {
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 20px; /* Space before the list starts */
+}
+
+#FDC ol {
+    padding: 0; /* Removing default padding */
+}
+
+#FDC li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+footer {
+    background-color: #FDFAF6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive media queries for mobile devices */
+@media (max-width: 768px) {
+    /* Adjusts navigation for smaller screens */
+    .homepage-Navbar {
+        flex-direction: column;
+        padding: 10px 20px; /* Reduced padding for smaller screens */
+    }
+
+    .logo, nav ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%; /* Makes each nav item full width */
+        padding: 10px 0; /* Adds more vertical padding for easier tapping */
+    }
+
+    /* Header adjustments */
+    .FAQHeader {
+        padding: 20px 10px; /* Adjusts padding to fit smaller screens */
+    }
+
+    .FAQHeader h1 {
+        font-size: 24px; /* Reduces font size to fit smaller screens */
+    }
+
+    /* Content section adjustments */
+    #Questions, .fdc_SearchResults, #FDC {
+        padding: 20px 10px; /* Adjusts padding to fit smaller screens */
+        margin: 10px auto; /* Ensures everything is centered and optimally spaced */
+        max-width: 100%; /* Allows sections to fill the available space */
+    }
+
+    /* Adjusts search results input fields and buttons for usability */
+    .fdc_SearchResults input[type="number"], .fdc_SearchResults button {
+        width: calc(100% - 24px); /* Full width minus padding for edge-to-edge design */
+        margin: 10px 10px; /* Reduces margin for more space */
+    }
+
+    /* List adjustments in FAQ section */
+    #Questions ul, #FDC ol {
+        padding: 0 10px; /* Adjusts padding for list items */
+    }
+
+    #Questions li, #FDC li {
+        margin-bottom: 5px; /* Reduces the margin to make the list denser */
+    }
+}
+
+footer {
+    padding: 10px 0; /* Reduces footer padding on smaller screens */
+}

@@ -1,0 +1,263 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf1e6;
+     
+}
+/* Same nav elements from homepage css(will copy for other pages) */
+.homepage-Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+/* Same logo elements from homepage css as well(Will use these for other pages as the nav bar should be consistent from page to page) */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: myFirstFont;
+
+}
+
+.logo a:link {
+    color: blue;
+}
+
+.logo a:visited {
+    color: blueviolet;
+}
+
+.logo a:hover {
+    color: rgb(255, 6, 201);
+}
+
+.logo a:active {
+    color: aqua;
+}
+/*Same nav elements from homepage css as nav bar should be consistent */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: myFirstFont;
+    font-size: 20px;
+}
+
+nav ul li a:link {
+    color: black;
+}
+
+nav ul li a:visited {
+    color: blueviolet;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+nav ul li a:active {
+    color: aqua;
+}
+
+.aboutHero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FDFAF6;
+}
+
+.aboutHero h1 {
+    font-family: American Typewriter, serif;
+}
+
+.features h2 {
+    font-family: American Typewriter, serif;
+    text-align: center;
+}
+
+/* General styling for the first feature */
+#FoodSearchAbout {
+    font-family: Arial, sans-serif; 
+    display: inline-block;
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border-radius: 8px; /* Rounded corners for this section */
+    max-width: 600px; 
+    margin: 20px auto; /* Centering the section */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+}
+
+#FoodSearchAbout h2 {
+    color: #333; 
+    text-align: center; /
+}
+
+#FoodSearchAbout p {
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+#FoodSearchAbout ul {
+    list-style-type: none; /* Removing default bullet points */
+    padding: 0; 
+}
+
+#FoodSearchAbout li {
+    margin-bottom: 10px; /* Space between list items */
+}
+/* Has similar styling as food search */
+#NutrientAbout {
+    font-family: Arial, sans-serif; 
+    display: inline-block;
+    background-color: #f9f9f9;
+    padding: 20px; 
+    border-radius: 8px; /* Rounded corners for the section */
+    max-width: 600px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+}
+
+#NutrientAbout h2 {
+    color: #333; 
+    text-align: center; 
+}
+
+#NutrientAbout p {
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+#NutrientAbout ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+#NutrientAbout li {
+    margin-bottom: 10px;
+}
+
+/* Has similar styling as food search */
+#MobileAbout {
+    font-family: Arial, sans-serif; 
+    display: inline-block;
+    background-color: #f9f9f9;
+    padding: 20px; 
+    border-radius: 8px; /* Rounded corners for the section */
+    max-width: 600px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+}
+
+#MobileAbout h2 {
+    color: #333; 
+    text-align: center; 
+}
+
+#MobileAbout p {
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+#MobileAbout ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+#MobileAbout li {
+    margin-bottom: 10px;
+}
+
+.DataSourceBackground {
+    background-color: #fdfaf6;
+}
+
+/* Styling for sourcing my data */
+#DataSource {
+    font-family: Arial, sans-serif; 
+    /* Might change color for better readability */
+    background-color: #f9f9f9; /* Light grey background for contrast */
+    padding: 20px; 
+    border-radius: 8px; /* Rounded corners for the section */
+    max-width: 600px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+#DataSource h2 {
+    color: #333; 
+    text-align: center; 
+}
+
+#DataSource p {
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Responsive media queries for mobile devices */
+@media (max-width: 768px) {
+    /* Adjusts navigation for smaller screens */
+    .homepage-Navbar {
+        flex-direction: column;
+        padding: 10px 20px; /* Reduced padding for smaller screens */
+    }
+
+    .logo, nav ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%; /* Makes each nav item full width */
+        padding: 10px 0; /* Adds more vertical padding for easier tapping */
+    }
+
+    /* Hero and feature sections adapted for small screens */
+    .aboutHero, .features h2, #FoodSearchAbout, #NutrientAbout, #MobileAbout, #DataSource {
+        padding: 20px 10px; /* Adjusts padding to fit smaller screens */
+        margin: 10px auto; /* Ensures everything is centered and optimally spaced */
+        max-width: 100%; /* Allows sections to fill the available space */
+    }
+
+    .aboutHero h1, .features h2 {
+        font-size: 24px; /* Reduces font size to fit smaller screens */
+    }
+
+    /* Adjusts lists to be more compact */
+    #FoodSearchAbout ul, #NutrientAbout ul, #MobileAbout ul, #DataSource ul {
+        padding: 0 10px; /* Adjusts padding for list items */
+    }
+
+    #FoodSearchAbout li, #NutrientAbout li, #DataSource li, #MobileAbout {
+        margin-bottom: 5px; /* Reduces the margin to make the list denser */
+    }
+}
+
+footer {
+    padding: 10px 0; /* Reduces footer padding on smaller screens */
+}
